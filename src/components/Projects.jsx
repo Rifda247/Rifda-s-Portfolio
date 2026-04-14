@@ -12,7 +12,7 @@ const projects = [
     tech: ["Vanilla JavaScript"],
     liveUrl: "https://Luxelock.netlify.app",
     githubUrl: "https://github.com/Rifda247/LuxeLock",
-    image: "/assets/images/project-01.png",
+    image: "./assets/images/project-01.png",
     color: "from-amber-900/30 to-transparent",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     tech: ["Javascript"],
     liveUrl: "https://pocketsensee.netlify.app",
     githubUrl: "https://github.com/Rifda247/PocketSense",
-    image: "assets/images/project-02.png",
+    image: "./assets/images/project-02.png",
     color: "from-stone-700/30 to-transparent",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     tech: ["Vanilla JS"],
     liveUrl: "https://movia-app-n.netlify.app",
     githubUrl: "https://github.com/Rifda247/movia",
-    image: "/assets/images/project-03.png",
+    image: "./assets/images/project-03.png",
     color: "from-zinc-700/30 to-transparent",
   },
 ];
