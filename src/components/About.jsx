@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from './useInView'
-import { CheckCircle2 } from 'lucide-react'
+import { useState } from "react";
+import profilePhoto from "../assets/profile.jpg";
+import { motion } from "framer-motion";
+import { useInView } from "./useInView";
+import { CheckCircle2 } from "lucide-react";
 
 const values = [
-  'Deadline-driven and detail-oriented',
-  'Clear communication, always',
-  'Remote-ready and globally accessible',
-  'Results first, excuses never',
-]
+  "Deadline-driven and detail-oriented",
+  "Clear communication, always",
+  "Remote-ready and globally accessible",
+  "Results first, excuses never",
+];
 
 export default function About() {
-  const [ref, inView] = useInView()
-  const [imgError, setImgError] = useState(false)
+  const [ref, inView] = useInView();
+  const [imgError, setImgError] = useState(false);
 
   return (
     <section id="about" className="py-28 bg-charcoal relative overflow-hidden">
@@ -20,19 +21,18 @@ export default function About() {
 
       <div ref={ref} className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-
           {/* Left: Visual */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative"
           >
             {/* Profile photo — add public/profile.jpg */}
             <div className="relative aspect-[4/5] bg-surface-2 rounded-sm overflow-hidden border border-white/8">
               {!imgError ? (
                 <img
-                  src="/public/profile.jpg"
+                  src={profilePhoto}
                   alt="Rifda Folawiyo — Frontend Developer & Virtual Assistant"
                   className="w-full h-full object-cover object-center"
                   onError={() => setImgError(true)}
@@ -41,9 +41,13 @@ export default function About() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-24 h-24 rounded-full bg-accent/20 border-2 border-accent/40 mx-auto mb-4 flex items-center justify-center">
-                      <span className="font-display text-3xl text-accent font-semibold">RF</span>
+                      <span className="font-display text-3xl text-accent font-semibold">
+                        RF
+                      </span>
                     </div>
-                    <p className="text-muted text-sm font-mono">Add profile.jpg to /public</p>
+                    <p className="text-muted text-sm font-mono">
+                      Add profile.jpg to /public
+                    </p>
                   </div>
                 </div>
               )}
@@ -58,8 +62,12 @@ export default function About() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="absolute -right-4 -bottom-6 bg-surface-2 border border-white/8 p-4 max-w-[200px] animate-float"
             >
-              <p className="font-mono text-xs text-accent mb-1 tracking-wider">CURRENT STATUS</p>
-              <p className="font-display text-sm text-cream">Open to freelance & full-time roles</p>
+              <p className="font-mono text-xs text-accent mb-1 tracking-wider">
+                CURRENT STATUS
+              </p>
+              <p className="font-display text-sm text-cream">
+                Open to freelance & full-time roles
+              </p>
             </motion.div>
 
             {/* Decorative line */}
@@ -70,11 +78,11 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.15 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
           >
             <span className="section-label block mb-4">About Me</span>
             <h2 className="font-display text-4xl md:text-5xl font-semibold text-cream leading-tight mb-6">
-              Not just another{' '}
+              Not just another{" "}
               <span className="italic text-accent">developer.</span>
               <br />A problem-solver.
             </h2>
@@ -83,19 +91,19 @@ export default function About() {
               <p>
                 I'm Rifda Folawiyo, a self-driven frontend developer and virtual
                 assistant who turned curiosity into a career. What started as
-                learning HTML and CSS out of passion became a professional journey
-                into building digital experiences that actually work.
+                learning HTML and CSS out of passion became a professional
+                journey into building digital experiences that actually work.
               </p>
               <p>
                 My edge? I don't just write code, I understand your business
-                needs. Whether it's a pixel-perfect website that converts visitors
-                into clients, or reliable backend support that keeps your operations
-                running smoothly, I bring both <span className="text-cream">technical skill</span> and{' '}
-                <span className="text-cream">professional reliability</span> to every project.
+                needs. Whether it's a pixel-perfect website that converts
+                visitors into clients, or reliable backend support that keeps
+                your operations running smoothly, I bring both{" "}
+                <span className="text-cream">technical skill</span> and{" "}
+                <span className="text-cream">professional reliability</span> to
+                every project.
               </p>
-              <p>
-                Based in Nigeria, available worldwide.
-              </p>
+              <p>Based in Nigeria, available worldwide.</p>
             </div>
 
             <ul className="space-y-3 mb-10">
@@ -107,7 +115,10 @@ export default function About() {
                   transition={{ delay: 0.4 + i * 0.1, duration: 0.5 }}
                   className="flex items-center gap-3 text-sm font-body text-muted"
                 >
-                  <CheckCircle2 size={16} className="text-accent flex-shrink-0" />
+                  <CheckCircle2
+                    size={16}
+                    className="text-accent flex-shrink-0"
+                  />
                   {v}
                 </motion.li>
               ))}
@@ -126,5 +137,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
