@@ -1,5 +1,5 @@
 import { useState } from "react";
-import profilePhoto from "../assets/profile.jpg";
+import profilePhoto from "../assets/images/profile.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "./useInView";
 import { CheckCircle2 } from "lucide-react";

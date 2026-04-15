@@ -1,4 +1,7 @@
 import { useState } from "react";
+import project01 from "../assets/images/project-01.png";
+import project02 from "../assets/images/project-02.png";
+import project03 from "../assets/images/project-03.png";
 import { motion } from "framer-motion";
 import { useInView } from "./useInView";
 import { ExternalLink, Github } from "lucide-react";
@@ -12,7 +15,7 @@ const projects = [
     tech: ["Vanilla JavaScript"],
     liveUrl: "https://Luxelock.netlify.app",
     githubUrl: "https://github.com/Rifda247/LuxeLock",
-    image: "./assets/images/project-01.png",
+    image: project01,
     color: "from-amber-900/30 to-transparent",
   },
   {
@@ -23,7 +26,7 @@ const projects = [
     tech: ["Javascript"],
     liveUrl: "https://pocketsensee.netlify.app",
     githubUrl: "https://github.com/Rifda247/PocketSense",
-    image: "./assets/images/project-02.png",
+    image: project02,
     color: "from-stone-700/30 to-transparent",
   },
   {
@@ -33,7 +36,7 @@ const projects = [
     tech: ["Vanilla JS"],
     liveUrl: "https://movia-app-n.netlify.app",
     githubUrl: "https://github.com/Rifda247/movia",
-    image: "./assets/images/project-03.png",
+    image: project03,
     color: "from-zinc-700/30 to-transparent",
   },
 ];
