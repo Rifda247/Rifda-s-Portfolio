@@ -13,7 +13,7 @@ const projects = [
     description:
       "A fully responsive, accessible website built for a LuxeLock,a feminine hairsalon brand that sells wigs and beautify women,focused on fast load times, clean UI, and driving conversions.",
     tech: ["Vanilla JavaScript"],
-    liveUrl: "https://Luxelock.netlify.app",
+    liveUrl: "https://luxe-lock.vercel.app/",
     githubUrl: "https://github.com/Rifda247/LuxeLock",
     image: project01,
     color: "from-amber-900/30 to-transparent",
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Designed and developed a responsive multi landing page for an e-commerce app where users can track expenses, . Pixel-perfect from mobile to desktop. ",
     tech: ["Javascript"],
-    liveUrl: "https://pocketsensee.netlify.app",
+    liveUrl: "https://pocket-sense-murex.vercel.app/",
     githubUrl: "https://github.com/Rifda247/PocketSense",
     image: project02,
     color: "from-stone-700/30 to-transparent",
@@ -34,7 +34,7 @@ const projects = [
     title: "Movia",
     description: "A movie seaarch app built ",
     tech: ["Vanilla JS"],
-    liveUrl: "https://movia-app-n.netlify.app",
+    liveUrl: "https://movia-sage.vercel.app/",
     githubUrl: "https://github.com/Rifda247/movia",
     image: project03,
     color: "from-zinc-700/30 to-transparent",
